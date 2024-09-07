@@ -1,3 +1,104 @@
-.resume {
-    display: flex
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.resume {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column, .right-column {
+    padding: 20px;
+    width: 50%;
+}
+
+.left-column {
+    border-right: 2px solid #eee;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #666;
+}
+
+h5 {
+    font-size: 1em;
+    color: #666;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.about, .education, .contact, .address, .work-experience, .skills {
+    margin-bottom: 20px;
+}
+
+.skills {
+    line-height: 1.8;
+}
+
+.address, .contact, .education {
+    font-size: 0.9em;
+}
+
+.name {
+    text-align: left;
+}
+
+.name h1 {
+    font-size: 2.5em;
+    color: #333;
+    ;
+}
+
+.name h4 {
+    margin-top: 0%;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.left-column, .right-column {
+    padding: 20px;
+}
+
+.left-column {
+    border-right: 2px solid #eee;
+}
+
+.right-column {
+    padding-left: 20px;
+}
+
