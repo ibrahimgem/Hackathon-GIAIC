@@ -277,7 +277,7 @@ li {
     }
 
     .left-column, .right-column {
-        width: 100%;
+        width: 90%;
         margin: 0;
         padding: 20px;
     }
