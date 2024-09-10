@@ -3,6 +3,7 @@ body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: justify;
 }
 
 body {
@@ -20,36 +21,34 @@ body {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
 }
 
 .left-column, .right-column {
-    padding: 20px;
+    padding: 40px;
     width: 50%;
 }
 
 .left-column {
     border-right: 2px solid #eee;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #333;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: #2465ab;
+    line-height: 30px;
 }
 
 h3 {
     font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
 }
 
 h4 {
     font-size: 1.2em;
-    color: #666;
 }
 
 h5 {
     font-size: 1em;
-    color: #666;
 }
 
 hr {
@@ -79,15 +78,22 @@ p {
 }
 
 .name h1 {
-    font-size: 2.5em;
-    color: #333;
-    ;
+    font-size: 4.5em;
+    color: #2465ab;
+    margin: 0;
+    line-height: 80px;
+    letter-spacing: 5px;
 }
 
 .name h4 {
-    margin-top: 0%;
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 1.2em;
-    color: #666;
+    color: #2465ab;
+}
+
+.work-experience h3 {
+    color: #2465ab;
 }
 
 .left-column, .right-column {
@@ -100,5 +106,168 @@ p {
 
 .right-column {
     padding-left: 20px;
+    margin-top: 50px;
 }
 
+h3.left-column {
+    color: #eee;
+}
+
+.about, .education, .contact, .address, .left-column {
+    color: #eee;
+}
+
+.virtual, .nabi, .fairyland {
+    display: height 20px;
+}
+
+.work-experience h5 {
+    font-weight: lighter;
+}
+
+li {
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.skills {
+    width: 500px;
+    margin: 60px auto;
+}
+
+.skills h3 {
+    color: #2465ab;
+
+}
+
+.skills li {
+    margin: 20px 0;
+}
+
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background-color: #2187e7;
+}
+
+.html {
+    width: 60%;
+    animation: html 2s;
+}
+
+.css {
+    width: 50%;
+    animation: css 2s;
+}
+
+.typescript {
+    width: 40%;
+    animation: typescript 2s;
+}
+
+.nextjs {
+    width: 30%;
+    animation: nextjs 2s;
+}
+.nodejs {
+    width: 40%;
+    animation: nodejs 2s;
+}
+
+.about h3 {
+    margin-top: 50px;
+}
+
+.name h1 {
+    margin-top: 50px;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes typescript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes nextjs {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+@keyframes nodejs {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+.section-button {
+    background-color: #2465ab;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+    display: block;
+    background: #2465ab;
+    border-bottom: 2px solid #eee;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.section-button:hover {
+    background-color: #1e4d8f;
+    transform: scale(1.02);
+}
+
+.section-button:active {
+    background-color: #1a3e6d;
+    transform: scale(1);
+}
+
+.section-button:focus {
+    outline: 2px solid #f0f0f0;
+    outline-offset: 2px;
+}
+
+.about, .education, .contact, .address, .work-experience, .skills {
+    display: show;
+}
