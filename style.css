@@ -271,3 +271,73 @@ li {
 .about, .education, .contact, .address, .work-experience, .skills {
     display: show;
 }
+
+@media (min-width: 768px) {
+    .resume {
+        flex-direction: row; /* Adjust layout to row for larger screens */
+    }
+
+    .left-column, .right-column {
+        width: 50%;
+    }
+
+    .left-column {
+        margin-left: 50px;
+        margin-top: 50px;
+        border-right: 2px solid #eee;
+        border-radius: 50px;
+        padding: 40px;
+        background-color: #2465ab;
+    }
+
+    .right-column {
+        padding: 40px;
+    }
+
+    .name h1 {
+        font-size: 3.5em;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .name h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+
+    .section-button {
+        font-size: 1em;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume {
+        padding: 10px;
+    }
+
+    .name h1 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .skills {
+        margin: 10px 0;
+    }
+
+    .section-button {
+        font-size: 0.9em;
+    }
+
+    .skills li {
+        margin: 10px 0;
+    }
+}
