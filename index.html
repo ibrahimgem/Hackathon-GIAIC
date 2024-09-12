@@ -7,45 +7,100 @@
     <title>Resume App</title>
 </head>
 <body>
-    <div class="resume">
+
+    <div id="input-form">
+        <h3>Enter Your Resume Details</h3>
+        <form id="resumeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br>
+            
+            <label for="about">About Me:</label>
+            <textarea id="about" name="about" required></textarea><br>
+            
+            <label for="education">Education</label> <br>
+            <label for="institute">Institute:</label>
+            <input type="text" id="degree" name="education" required></input>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="education" required></input><br>
+            
+            <label for="contact">Contact Details</label> <br>
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="contact" required><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>
+
+            <label for="workExperience">Work Experience</label> <br>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="workExperience" required></textarea>
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="workExperience" required></textarea> <br>
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" name="workExperience" required></textarea> <br>
+            <label for="descirption">Description:</label>
+            <textarea id="descirption" name="workExperience" required></textarea><br>
+
+            <label for="skill1">Skill</label>
+            <input type="text" id="skill1" name="skill" required><br>
+            <label for="skill2">Skill</label>
+            <input type="text" id="skill2" name="skill" required><br>
+            <label for="skill3">Skill</label>
+            <input type="text" id="skill3" name="skill" required><br>
+            <label for="skill4">Skill</label>
+            <input type="text" id="skill4" name="skill" required><br>
+            <label for="skill5">Skill</label>
+            <input type="text" id="skill5" name="skill" required><br>
+
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <!-- After user input the resume will be generated this point -->
+    <div class="resume" style="display: none">
         <div class="left-column">
             <button id="toggle-about" class="section-button">ABOUT ME</button>
             <div class="about">
                 <hr>
-                <p>I am a web developer aspiring to be among the top in the field. Proficient in HTML, CSS, TypeScript, Next.js, Node.js, and office tools.</p>
+                <p id="dynamic-about"></p>
             </div>
 
             <button id="toggle-education" class="section-button">EDUCATION</button>
             <div class="education">
                 <hr>
-                <h5 class="VU">Virtual University of Pakistan </h5> <p> BS in Information Technology </p>
-                <h5 class="Nabi">Nabi Bagh Z.M Science College </h5> <p> Intermediate in Pre-Engineering </p>
-                <h5 class="Fairyland">Fairyland Secondary School </h5> <p> Matric in Science </p>
+                <h5 id="dynamic-institute1"></h5> 
+                <p id="dynamic-degree1"></p>
             </div>
 
             <button id="toggle-contact" class="section-button">CONTACT</button>
             <div class="contact">
                 <hr>
-                <p>0344-2554294 <br> iby.khan7@gmail.com</p>
+                <p id="dynamic-contact"></p> <br>
+                <p id="dynamic-email"></p>
             </div>
-
+<!-- Worked here read above understand and continue -->
             <button id="toggle-address" class="section-button">ADDRESS</button>
             <div class="address">
                 <hr>
-                House No 203, Al Yasir Manzil (Masjid Abdul Wahab), Kambela Chowk, Keamari, Karachi.
+                <p id="dynamic-address"></p>
             </div>
         </div>
         <div class="right-column">
             <div class="name">
-                <h1>MUHAMMAD IBRAHIM</h1>
-                <h4>FULL STACK DEVELOPER</h4>
+                <h1 id="dynamic-name"></h1>
+                <h4 id="dynamic-title"></h4>
             </div>
             <button id="toggle-work" class="section-button">WORK EXPERIENCE</button>
             <div class="work-experience">
                 <hr>
-                <h5>Zam Zam Public School / Jan 2014 - present</h5>
-                <h4>IT Assistant</h4>
-                <p>Troubleshooting hardware and software issues, installing and configuring hardware and software, maintaining systems, training users, creating and maintaining documentation, managing data backups and disaster recovery, collaborating with IT team members, and researching new technology.</p>
+                <h5 id="dynamic-company"> </h5> / <h5 id="dynamic-duration"></h5>
+                <h4 id="dynamic-position"></h4>
+                <p id="dynamic-description"></p>
             </div>
 
             <button id="toggle-skills" class="section-button">SKILLS</button>
